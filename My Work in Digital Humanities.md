@@ -10,6 +10,9 @@ There are two flagship projects that define my work: _The Digital Orientalist_ a
 ---
 ![alt text](https://github.com/lwcvl/cv/blob/master/DH/DOStrip.jpg "Logo Title Text 1")
 
+The genesis of this project is simply the realization that I was making quite a few hacks, coming up with a number of tricks, and thinking through the best strategy for some of the more mundane uses of technology in our work. 
+First for my colleagues so that we may together improve the digital literacy of our field. But second librarians to give a perspective of where things are going.
+
 ### Main Project: Online Magazine
 1. www.digitalorientalist.com is a website launched in 2013 as a personal blog that has since then grown into an online magazine run by a team of six from three different continents, reaching a global audience of tens of thousands.
 

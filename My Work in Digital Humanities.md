@@ -8,7 +8,13 @@
 There are two flagship projects that define my work: _The Digital Orientalist_ and _Among Digitized Manuscripts_
 
 ---
-![alt text](https://github.com/lwcvl/cv/blob/master/DOStrip.jpg "Logo Title Text 1")
+![alt text](https://github.com/lwcvl/cv/blob/master/DH/DOStrip.jpg "Logo Title Text 1")
 
-## Main Project: Online Magazine
-1. <www.digitalorientalist.com> is a website launched in 2013 as a personal blog that has since then grown into an online magazine run by a team of six from three different continents, reaching a global audience of tens of thousands.
+### Main Project: Online Magazine
+1. www.digitalorientalist.com is a website launched in 2013 as a personal blog that has since then grown into an online magazine run by a team of six from three different continents, reaching a global audience of tens of thousands.
+
+
+### Publications
+2. [A manifesto](https://github.com/lwcvl/cv/blob/master/DH/LWCvL%20Digital%20Orientalist%20MELANotes%2088.pdf) published in _MELA Notes_, a journal for librarians.
+
+3. [A review](https://github.com/lwcvl/cv/blob/master/DH/LWCvL%20Review%20Muhanna%20JAOS137.3.pdf) of a book that does a good job at introducing DH for Islamic and Middle East Studies, published in the _Journal of the American Oriental Society_.

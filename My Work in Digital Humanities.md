@@ -16,8 +16,7 @@ The genesis of this project was the realization that I was making quite a few ha
 1. www.digitalorientalist.com is a website launched in 2013 as a personal blog that has since then grown into an online magazine run by a team of six from three different continents, reaching a global audience of tens of thousands.
 
 ### Videos
-2. A talk in which I predict how computer vision can enter Humanities research
-[![Talk at KB](https://img.youtube.com/vi/iOEJ2Z_iurM/0.jpg)](https://www.youtube.com/watch?v=iOEJ2Z_iurM)
+2. [![Talk at KB]A talk](https://www.youtube.com/watch?v=iOEJ2Z_iurM) in which I predict how computer vision can enter Humanities research
 
 
 ### Publications

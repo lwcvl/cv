@@ -10,7 +10,7 @@ There are two flagship projects that define my work: _The Digital Orientalist_ a
 ---
 ![alt text](https://github.com/lwcvl/cv/blob/master/DH/DOStrip.jpg "Logo Title Text 1")
 
-<p style="align:center">The Digital Orientalist</p>
+# The Digital Orientalist
 
 The genesis of this project was the realization that I was making quite a few hacks, coming up with a number of tricks, and thinking through the best strategy for some of the more mundane uses of technology in our work, all of which could be useful to others around me. Thus, I put effort in generating practical examples and theoretical reflections on using technology in our day-to-day workflow. The primary audience was my colleagues so that we may together improve the digital literacy of our field. But I realized that librarians were also interested in hearing about this. 
 

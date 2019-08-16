@@ -26,10 +26,14 @@ The genesis of this project was the realization that I was making quite a few ha
 
 5. [Tutorial](https://youtu.be/dFFJJHVGFVE) for post-digitization editing of photographs, turning them into more usable PDFs.
 
-### Publications
-6. [A manifesto](https://github.com/lwcvl/cv/blob/master/DH/LWCvL%20Digital%20Orientalist%20MELANotes%2088.pdf) published in _MELA Notes_, a journal for librarians.
+### Software
 
-7. [A review](https://github.com/lwcvl/cv/blob/master/DH/LWCvL%20Review%20Muhanna%20JAOS137.3.pdf) of a book that does a good job at introducing DH for Islamic and Middle East Studies, published in the _Journal of the American Oriental Society_.
+6. [Keyboard layouts for Arabists](https://doi.org/10.5281/zenodo.3369595) For more information see [here](https://digitalorientalist.com/2017/07/11/improved-keyboard-layout-for-mac/) and [here](https://digitalorientalist.com/2014/04/10/the-digital-orientalists-keyboard-layouts-windows-and-mac/)
+
+### Publications
+7. [A manifesto](https://github.com/lwcvl/cv/blob/master/DH/LWCvL%20Digital%20Orientalist%20MELANotes%2088.pdf) published in _MELA Notes_, a journal for librarians.
+
+8. [A review](https://github.com/lwcvl/cv/blob/master/DH/LWCvL%20Review%20Muhanna%20JAOS137.3.pdf) of a book that does a good job at introducing DH for Islamic and Middle East Studies, published in the _Journal of the American Oriental Society_.
 
 ### Panels
 8. AOS

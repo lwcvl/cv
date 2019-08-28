@@ -1,0 +1,150 @@
+.social:hover {
+  opacity: 0.7;
+  cursor: pointer;
+  transform: scale(1.5);
+}
+
+.left {
+  text-align: left;
+  text-transform: none;
+  padding-left: 2px;
+}
+
+/* The alert message box */
+.alert {
+  z-index: 5;
+  display: flex;
+  flex-flow: row;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  display: none;
+
+  background-color: #17852a;
+  color: white;
+}
+
+.social {
+  color: white;
+}
+
+#among {
+  background-color: 231f20;
+}
+
+#among i,
+b,
+p,
+ul,
+li {
+  color: ivory;
+}
+
+#among img {
+  max-width: 100%;
+}
+
+.menuSection nav {
+  width: auto;
+}
+
+.menuSection nav ul {
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  margin-bottom: 0;
+  list-style: none;
+  padding-left: 0;
+  border: solid 1px #9b3b3b;
+  border-radius: 4px;
+}
+
+.menuSection nav ul li {
+  padding-left: 0;
+  border-left: solid 1px #9b3b3b;
+}
+
+.menuSection nav ul li:first-child {
+  border-left: 0;
+}
+
+.menuSection nav ul li a {
+  display: block;
+  min-width: 7.5rem;
+  height: 100%;
+  line-height: 2.75rem;
+  padding: 0 1.25rem 0 1.45rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-size: 0.8rem;
+  border-bottom: 0;
+}
+
+.menuSection nav ul li a:hover {
+  background-color: rgb(211, 12, 12);
+}
+
+.menuSection nav ul li a:active {
+  background-color: rgba(255, 255, 255, 0.175);
+}
+
+.menuSection nav.use-middle:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: calc(50% - 1px);
+  width: 1px;
+  height: 100%;
+  background: #ffffff;
+}
+
+.menuSection nav.use-middle ul li.is-middle {
+  border-left: 0;
+}
+
+@media screen and (max-width: 480px) {
+
+    .menuSection nav ul {
+      -moz-flex-direction: column;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      min-width: 10rem;
+      max-width: 100%;
+    }
+
+      .menuSection nav ul li {
+        border-left: 0;
+        border-top: solid 1px #ffffff;
+      }
+
+        .menuSection nav ul li:first-child {
+          border-top: 0;
+        }
+
+        .menuSection nav ul li a {
+          height: 100%;
+          line-height: 3rem;
+          min-width: 0;
+          width: 100%;
+        }
+
+    .menuSection nav.use-middle:after {
+      display: none;
+    }
+
+}
+
+.flexContainer {
+  display: flex;
+  
+}
+
+@media screen and (max-width: 500px) {
+  .flexContainer {
+    
+    flex-direction: column;
+  }
+}

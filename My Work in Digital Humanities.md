@@ -36,11 +36,13 @@ The genesis of this project was the realization that I was making quite a few ha
 8. [A review](https://github.com/lwcvl/cv/blob/master/DH/LWCvL%20Review%20Muhanna%20JAOS137.3.pdf) of a book that does a good job at introducing DH for Islamic and Middle East Studies, published in the _Journal of the American Oriental Society_.
 
 ### Panels
-8. AOS
-9. DH2019
+9. AOS
+10. DH2019
 
 ### Workshops
-NISIS
+11. NISIS
+
+12. Blogpost http://etcbc.nl/methodology/manuscripts-in-the-digital-humanities/
 
 
 ### Talks

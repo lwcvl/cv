@@ -1,1 +1,31 @@
-# Empty CSS file for your own CSS
+div {
+    padding: 10px;
+}
+
+.almond {
+    background-color: blanchedalmond;
+}
+.peach {
+    background-color: palevioletred;
+}
+.cadet {
+    background-color: cadetblue;
+}
+
+.touch {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+
+  .card-2 {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  }
+
+  .general {
+      column-count: 2;
+  }
+
+  .jumbotron {
+    background: rgb(70,122,60);
+background: linear-gradient(0deg, rgb(244,255,89) 0%, rgb(238,231,179)  60%);
+box-shadow: 0 4px 8px rgba(0,0,0,0.16), 0 4px 8px rgba(0,0,0,0.23);
+  }

@@ -29,3 +29,23 @@ div {
 background: linear-gradient(0deg, rgb(244,255,89) 0%, rgb(238,231,179)  60%);
 box-shadow: 0 4px 8px rgba(0,0,0,0.16), 0 4px 8px rgba(0,0,0,0.23);
   }
+
+  @media only screen and (max-width: 600px) {
+    .general {
+      column-count: 1;
+    }
+  }
+
+  .btn-group {margin-bottom: 10px;}
+
+@media only screen and (max-width: 767px) {
+  .btn-group {
+    display: block;
+  }
+  
+  .btn-group .btn {
+    display: block;
+    float: none;
+    width: 100%;
+  }
+}

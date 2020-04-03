@@ -1,0 +1,277 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+h1, h2, h3, h4, p {
+  font-family: 'Ubuntu', sans-serif; 
+  padding: 3px;
+}
+
+@media only screen and (min-width: 769px) {
+.split {
+  position: fixed;
+  background-size:100%; 
+    background-repeat: no-repeat; 
+    width: 50vw;
+    height: 100vh;
+}
+  #dh {
+    left: 0;
+    background-image: url('images/IMG_1313.jpg');
+  }
+  
+  #woi {
+    right: 0;
+    background-image: url('images/IMG_1314.jpg');   
+  }
+
+ 
+  
+  .centeredDiv:hover {
+    -webkit-animation-play-state:paused;
+    -moz-animation-play-state:paused;
+    -o-animation-play-state:paused;
+    animation-play-state:paused;
+    box-shadow: -2px 9px 38px 32px rgba(250, 221, 125, 0.8);
+    cursor: pointer;
+    
+  }
+
+  #dhText:hover {
+    background-color: rgb(0,0,0);
+    box-shadow: 0px 0px 20px 25px rgb(0,0,0);
+    color: white;
+  }
+  #woiText:hover {
+    background-color: rgb(0,0,0);
+    box-shadow: 0px 0px 20px 25px rgb(0,0,0);
+    color: white;
+  }
+  #infoButton:hover {
+    background-color: black;
+    box-shadow: 0 0px 18px 10px rgba(250, 221, 125, 0.8);
+    cursor: pointer;
+  }
+  
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+.split {
+  position: static;
+  background-size:100%; 
+    background-repeat: no-repeat; 
+    width: 100vw;
+    height: 133vw;
+}
+  #dh {
+    left: 0;
+    background-image: url('images/IMG_1313.jpg');
+  }
+  
+  #woi {
+    right: 0;
+    background-image: url('images/IMG_1314.jpg');   
+  }
+}
+
+body{
+  background-color: black;
+}
+
+#dh h4{
+  font-size: larger;
+  color: rgb(64, 115, 58);
+  text-shadow: 2px 2px 8px rgb(109, 179, 102);
+  letter-spacing: 0.1em;
+}
+
+#dh p{
+  color: cornsilk;
+  text-align: justify;
+  text-justify: inter-character;
+  line-height: 2em;
+}
+#woi h4{
+  font-size: larger;
+  color: rgb(	142, 152, 176);
+  text-shadow: 2px 2px 8px #ffffff;
+  letter-spacing: 0.1em;
+}
+
+#woi p{
+  color: whitesmoke;
+  text-align: justify;
+  text-justify: inter-character;
+  line-height: 2em;
+}
+
+/* #dhText {
+  width: 100%;
+  height: 100%;
+} */
+#woiText p {
+  padding: 0px;
+} 
+
+.centeredDiv {
+  width: 250px;
+  height: 250px;
+  position: relative;
+  
+  left: calc(50% - 125px);
+  top: calc(50% - 125px);
+  left: -moz-calc(50% - 125px);
+  top: -moz-calc(50% - 125px);
+  left: -webkit-calc(50% - 125px);
+  top: -webkit-calc(50% - 125px);
+  left: -o-calc(50% - 125px);
+  top: -o-calc(50% - 125px);
+  
+  /* margin-top: -125px;
+  margin-left: -125px; */
+  
+  box-shadow: 0 4px 8px 0 rgba(247, 226, 156, 0.2), 0 6px 20px 0 rgba(247, 226, 156, 0.19);
+  transition: box-shadow 0.3s ease-in-out;
+
+  padding: 1em;
+  
+  -webkit-animation: KEYFRAME-NAME 5s infinite;
+  -moz-animation:    KEYFRAME-NAME 5s infinite;
+  -o-animation:      KEYFRAME-NAME 5s infinite;
+  animation:         KEYFRAME-NAME 5s infinite;
+}
+
+@-webkit-keyframes KEYFRAME-NAME {
+  0%   { background-color: rgba(0,0,0,0) }
+  50%  { background-color: rgba(0,0,0,1.0)}
+  100% { background-color: rgba(0,0,0,0)}
+}
+@-moz-keyframes KEYFRAME-NAME {
+  0%   { background-color: rgba(0,0,0,0) }
+  50%  { background-color: rgba(0,0,0,1.0)}
+  100% { background-color: rgba(0,0,0,0)}
+}
+@-o-keyframes KEYFRAME-NAME {
+  0%   { background-color: rgba(0,0,0,0) }
+  50%  { background-color: rgba(0,0,0,1.0)}
+  100% { background-color: rgba(0,0,0,0)}
+}
+@keyframes KEYFRAME-NAME {
+  0%   { background-color: rgba(0,0,0,0) }
+  50%  { background-color: rgba(0,0,0,1.0)}
+  100% { background-color: rgba(0,0,0,0)}
+}
+
+#info {
+
+position: absolute;
+left: 1%;
+top: 1%;
+z-index: 10;
+width: 2.5rem;
+height: 2.5rem;
+/* background-image: url('images/info.svg'); */
+}
+#infoButton{
+  z-index: 11;
+width: 2.5rem;
+height: 2.5rem;
+border-radius:2rem;
+background-image: url('images/001.jpg');
+background-size: cover;
+-webkit-animation:spin 5s ease-in-out infinite;
+-moz-animation:spin 5s ease-in-out infinite;
+animation:spin 5s ease-in-out infinite;
+animation-delay: 2s;
+}
+@-moz-keyframes spin { 
+5% { 
+  -moz-transform: scale(1.4); } 
+10% {
+  -moz-transform: scale(1.0);
+}  
+15% {
+  -moz-transform: scale(1.2);
+}  
+20% {
+  -moz-transform: scale(1.0);
+}  
+100% { -moz-transform: scale(1.0);} 
+}
+@-webkit-keyframes spin { 
+5% { 
+  -webkit-transform: scale(1.4); } 
+10% {
+  -webkit-transform: scale(1.0);
+}  
+15% {
+  -webkit-transform: scale(1.2);
+}  
+20% {
+  -webkit-transform: scale(1.0);
+}  
+100% { -webkit-transform: scale(1.0);} 
+}
+@keyframes spin { 
+5% { 
+  -webkit-transform: scale(1.4); } 
+10% {
+  -webkit-transform: scale(1.0);
+}  
+15% {
+  -webkit-transform: scale(1.2);
+}  
+20% {
+  -webkit-transform: scale(1.0);
+}  
+100% { -webkit-transform: scale(1.0);} 
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 414px;
+  max-width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: seashell;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}

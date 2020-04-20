@@ -1,126 +1,628 @@
 <!DOCTYPE html>
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Personal website with all publications of Cornelis van Lit about digital humanities and islamic studies">
-  <meta name="author" content="Dr. Lambertus Willem Cornelis van Lit, O.P.">
-  <meta name="keywords" content="Lambertus, Willem, Cornelis, van, Lit, Eric, O.P., (Eric), L.W.C., L. W. C., van Lit, Digital, Humanities, Islamic, Studies, Manuscripts, Philology, Commentaries, Commentary, Tradition">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords"
+        content="Lambertus, Willem, Cornelis, van, Lit, Eric, O.P., (Eric), L.W.C., L. W. C., van Lit, Digital, Humanities, Islamic, Studies, Manuscripts, Philology, Commentaries, Commentary, Tradition">
 
-  <title>Personal website of Cornelis van Lit</title>
-  
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Ubuntu&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" type="text/css" href="cvStyle.css">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <link rel="stylesheet" href="pubStyle.css">
+
+    <title>All publications by Cornelis van Lit</title>
 </head>
 
 <body>
-  <!-- Trigger/Open The Modal -->
 
+    <div class="container">
+        <h1>Cornelis van Lit</h1>
+        <p>Welcome to my website. This page is currently under construction, displaying only a limited number of publications. You can browse through all my publications below, or
+            visit my thematic page on my project on digital manuscript studies here and on my current project on Ibn
+                ʿArabī's Reshaping of the Muslim Imagination here.</p>
 
-  <!-- The Modal -->
-  <div id="myModal" class="modal">
+        <div class="filters">
 
-    <!-- Modal content -->
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <img style="display: inline; margin: 0 5px;" title="heartica_logo" src="images/001.jpg" alt="" width="150px"
-        height="150px" />
-      <br>
-      <h2>Hi I am Cornelis and I work as a postdoc at Utrecht University.</h2><br>
-      <p>You will find two main sections on this website, relating to my work in digital humanities and in Islamic
-        studies. If you want a full CV or any particular publication, please contact me.</p><br>
-      <p><img src="images/Logo.mail.svg" alt="" srcset="" width="20rem" height="20rem"> You can reach me at
-        cornelisvanlit -at- gmail -dot- com</p>
-      <p><img src="images/Logo.twitter.svg" alt="" srcset="" width="20rem" height="20rem"> <a href="http://www.twitter.com/LWCvL">Follow me on Twitter</a></p>
-      <p><img src="images/Logo.github.svg" alt="" srcset="" width="20rem" height="20rem"> <a href="http://www.github.com/lwcvl">Check out my work on GitHub</a>
-      </p>
-      <hr>
-      <p><img src="images/Logo.DO.svg" alt="" srcset="" width="20rem" height="20rem"> <a href="http://www.digitalorientalist.com">Read my magazine The Digital Orientalist</a></p>
-      <p><a href="publications/index.html">Click here for all my publications, videos, and podcasts</a></p>
+            <div class="ui-group">
+                <h5>Type</h5>
+                <div class="button-group js-radio-button-group" data-filter-group="type">
+                    <button type="button" class="button btn control waves-effect is-checked" data-filter="">any</button>
+                    <button type="button" class="button btn control waves-effect amber darken-4"
+                        data-filter=".book">Books</button>
+                    <button type="button" class="button btn control waves-effect green darken-4"
+                        data-filter=".article">Articles</button>
+                    <button type="button" class="button btn control waves-effect deep-orange darken-4"
+                        data-filter=".review">Reviews</button>
+                    <button type="button" class="button btn control waves-effect blue darken-4"
+                        data-filter=".video">Videos</button>
+                    <button type="button" class="button btn control waves-effect lime darken-4"
+                        data-filter=".podcast">Podcasts</button>
+                    <button type="button" class="button btn control waves-effect brown darken-4"
+                        data-filter=".software">Software</button>
+                </div>
+            </div>
 
-    </div>
+            <div class="ui-group">
+                <h5>Topic</h5>
+                <div class="button-group js-radio-button-group" data-filter-group="topic">
+                    <button class="button btn control waves-effect  is-checked" data-filter="">any</button>
+                    <button class="button btn control waves-effect purple lighten-2" data-filter=".digital">Digital
+                        Humanities</button>
+                    <button class="button btn control waves-effect green lighten-2" data-filter=".islam">Islamic
+                        Studies</button>
+                    <button class="button btn control waves-effect cyan lighten-2"
+                        data-filter=".commentaries">Commentary Traditions</button>
+                    <button class="button btn control waves-effect teal lighten-2"
+                        data-filter=".suhrawardi">Suhrawardī</button>
+                    <button class="button btn control waves-effect pink lighten-2" data-filter=".arabi">Ibn
+                        ʿArabī</button>
+                </div>
+            </div>
 
-  </div>
-
-
-  <div id="info">
-    <button id="myBtn">
-      <div id="infoButton"></div>
-    </button>
-  </div>
-
-
-  <div id="wrapper" class="row">
-
-    <div id="dh" class="split col-lg-6">
-
-      <div id="dhCentered" class="centeredDiv">
-        <div id="dhText">
-          <h4>Digital Humanities</h4><br />
-          <p>I deliver cutting edge research on bringing manuscripts and editions from scanned images to plain text. I
-            also teach and promote digital methods. </p><br />
-          <p>Click here to learn more.</p>
+            <!-- <div class="ui-group">
+            <h5>Shape</h5>
+            <div class="button-group js-radio-button-group" data-filter-group="shape">
+              <button class="button is-checked" data-filter="">any</button>
+              <button class="button" data-filter=".round">round</button>
+              <button class="button" data-filter=".square">square</button>
+            </div>
+          </div> -->
         </div>
-      </div>
-
-    </div>
-    <div id="woi" class="split col-lg-6">
-
-      <div id="woiCentered" class="centeredDiv">
-        <div id="woiText">
-          <h4>Islamic Studies</h4><br />
-          <p>I investigate commentary writing in post-classical Islamic intellectual history, especially innovative
-            ideas started by Ghazālī, Suhrawardī, and Ibn ʿArabī.</p>
-          <p>Click here to learn more.</p>
+        <div class="ui-group">
+            <h5>Sort by</h5>
+            <div class="button-group sort-by-button-group">
+                <button class="button is-checked btn control waves-effect"
+                    data-sort-value="original-order">Importance</button>
+                <button class="button btn control waves-effect" data-sort-value="date">Date <i
+                        class="arrow up"></i></button>
+                <button class="button btn control waves-effect" data-sort-value="dateReverse">Date <i
+                        class="arrow down"></i></button>
+            </div>
         </div>
-      </div>
+
+        <div class="grid">
+            <div class="mix book digital" date="20200101">
+                <div class="card horizontal">
+
+                    <div class="valign-wrapper hide-on-small-only">
+                        <img src="images/2020.Among.jpg" alt="" sizes="" srcset="">
+                    </div>
+                    <div class="card-stacked">
+
+                        <div class="card-content">
+                            <span class="new badge amber darken-4" data-badge-caption="">Book from 2020</span>
+                            <h4 class="header">Among Digitized Manuscripts</h4>
+                            <h5>Philology, Codicology, Paleography in a Digital World</h5>
+
+                            <p>Working with manuscripts has become a digital affair. But, are there downsides to digital
+                                photos? And how can you take advantage of the incredible computing power you have
+                                literally at your fingertips? Cornelis van Lit explains in detail what happens when
+                                manuscript studies meets digital humanities. In Among Digitized Manuscripts you will
+                                learn why it is important to include a note on the photo quality in your codicological
+                                description, how to draw, collect, and publish glyphs of paleographic interest, what
+                                standards (such as TEI and IIIF) to abide by when transcribing a text, how to write
+                                custom software for image recognition, and much more. The leading principle is that
+                                learning a little about computers will already be of great benefit.</p>
+                            <blockquote class="blockBook">Leiden: Brill, 2020. ISBN: 9789004415218. Pages: xii, 333 pp.
+                            </blockquote>
+                        </div>
+                        <div class="card-action">
+                            <a class="amber-text text-darken-4" href="#">Buy a hardback copy or read digitally for free
+                                here</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Begin Entry -->
+            <div class="mix book islam commentaries" date="20170401">
+                <div class="card horizontal">
+
+                    <div class="valign-wrapper hide-on-small-only">
+                        <img src="images/2017.World.jpg" alt="" sizes="" srcset="">
+                    </div>
+                    <div class="card-stacked">
+
+                        <div class="card-content">
+                            <span class="new badge amber darken-4" data-badge-caption="">Book from 2017</span>
+                            <h4 class="header">The World of Image in Islamic Philosophy</h4>
+                            <h5>Ibn Sīna, Suhrawardī, Shahrazūrī and Beyond</h5>
+
+                            <p>One of the most controversial issues that divided Islamic philosophers and theologians
+                                during the Middle Ages was whether human beings would have a spiritual or bodily
+                                existence after death. The idea of a world of image was conceived as a solution,
+                                suggesting that there exists a world of non-physical (imagined) bodies, beyond our
+                                earthly existence. This world may be reached in sleep, in meditation or after death.
+                                From the embryonic conception by Ibn Sina, to the radical rethinking by Suhrawardi and
+                                Shahrazuri into a sophisticated system, L. W. C. van Lit unravels the history of this
+                                idea. Using a distant reading approach for measuring the transmission, he further shows
+                                how the idea remained relevant for Muslim thinkers through the centuries, up until
+                                today.</p>
+                            <blockquote class="blockBook">Edinburgh: Edinburgh University Press, 2017. ISBN:
+                                9781474415859. Pages: 288 pp.
+                            </blockquote>
+                        </div>
+                        <div class="card-action">
+                            <a class="amber-text text-darken-4" href="#">Buy a hardback or paperback copy here</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Entry -->
+            <!-- Begin Entry -->
+            <div class="mix software islam digital" date="20131001">
+                <div class="card horizontal">
+
+                    <div class="valign-wrapper hide-on-small-only">
+                        <img src="images/200.2013.DO.jpg" alt="" sizes="" srcset="">
+                    </div>
+                    <div class="card-stacked">
+
+                        <div class="card-content">
+                            <span class="new badge brown darken-4" data-badge-caption="">Website from 2013</span>
+                            <h4 class="header">The Digital Orientalist</h4>
+                            <h5>Practical examples and theoretical reflections on the do's and don'ts of using digital
+                                tools in Humanities research.</h5>
+
+                            <p>The Digital Orientalist is an online magazine with an editorial team of eight, affiliated
+                                with The American Oriental Society.</p>
+                            <blockquote class="blockBook"><i>The Digital Orientalist,</i> 2013-2020.
+                            </blockquote>
+                        </div>
+                        <div class="card-action">
+                            <a class=" brown-text brown-darken-4" href="http://www.digitalorientalist.com"
+                                target="_blank">Visit here</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Entry -->
+            <!-- Begin Entry -->
+            <div class="mix article islam commentaries" date="20170801">
+                <div class="card horizontal">
+
+                    <div class="valign-wrapper hide-on-small-only">
+                        <img src="images/200.2017.MIDEO.jpg" alt="" sizes="" srcset="">
+                    </div>
+                    <div class="card-stacked">
+
+                        <div class="card-content">
+                            <span class="new badge green darken-4" data-badge-caption="">Article from 2017</span>
+                            <h4 class="header">Commentary and Commentary Tradition</h4>
+                            <h5>The Basic Terms for Understanding Islamic Intellectual History</h5>
+
+                            <p>The term ‘commentary’ is usually understood as either exegesis or advocacy. Often this
+                                does not seem to do justice to the extant commentaries from the Islamic Middle Ages.
+                                Building on Shahab Ahmed’s interpretation of Islam, I put in place a theoretical
+                                framework for understanding commentaries. This framework requires us to take the
+                                graphical form of the text as our base unit, and from here I propose analytical
+                                definitions of ‘commentary’ and related terms. These are based on textual relations
+                                capturing different kinds of verbal agreement between two texts. I argue that verbal
+                                agreements are an important part of Islamic text-writing, to connect one’s own thought
+                                with that of the wider discourse. A commentary is, as I shall conclude, a text with
+                                ‘structural textual correspondence’. Sets of texts, most notably a ‘restricted
+                                commentary tradition’, are also defined and they are tools to establish the right
+                                context in which to study these commentaries.</p>
+                            <blockquote class="blockBook"><i>Mélanges de l'Institut Dominicain d'Études Orientales
+                                    (MIDÉO),</i> Cairo: Ifao, vol. 32, 2017, pp. 3-26.
+                            </blockquote>
+                        </div>
+                        <div class="card-action">
+                            <a class="green-text text-darken-4" href="https://journals.openedition.org/mideo/1580"
+                                target="_blank">Read online here</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Entry -->
+            <!-- Begin Entry -->
+            <div class="mix article islam commentaries" date="20150801">
+                <div class="card horizontal">
+
+                    <div class="valign-wrapper hide-on-small-only">
+                        <img src="images/200.2015.Oriens.jpg" alt="" sizes="" srcset="">
+                    </div>
+                    <div class="card-stacked">
+
+                        <div class="card-content">
+                            <span class="new badge green darken-4" data-badge-caption="">Article from 2015</span>
+                            <h4 class="header">An Ottoman Commentary Tradition on Ghazālī’s <i>Tahāfut al-falāsifa</i>
+                            </h4>
+                            <h5>Preliminary Observations</h5>
+
+                            <p>Ghazālī’s “The incoherence of the philosophers” spurred a counter-commentary by Ibn
+                                Rushd, as is well known. Up to ten texts from Ottoman scholars also purport to be
+                                commentaries on the Tahāfut, constituting a commentary tradition that has been neglected
+                                by scholars. The first two commentators, Khojazāda (d. 1488) and ʿAlāʾ al-Dīn Ṭūsī (d.
+                                1482), are not line-by-line exegetes of Ghazālī, but rather update the discussions that
+                                Ghazālī broached to the level of knowledge available to them. Khojazāda was favored by
+                                the Ottomans, but ʿAlāʾ al-Dīn’s content, methodology and argumentation style proves to
+                                be just as, if not more, interesting for us.</p>
+                            <blockquote class="blockBook"><i>Oriens,</i> Leiden: Brill, vol. 43, pp. 368-413.
+                            </blockquote>
+                        </div>
+                        <div class="card-action">
+                            <a class="green-text text-darken-4" href="https://zenodo.org/record/3757131#.Xpw_lS-caCM"
+                                target="_blank">Read online here</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Entry -->
+            <!-- Begin Entry -->
+            <div class="mix article islam commentaries suhrawardi" date="20180201">
+                <div class="card horizontal">
+
+                    <div class="valign-wrapper hide-on-small-only">
+                        <img src="images/200.2018.PEW.jpg" alt="" sizes="" srcset="">
+                    </div>
+                    <div class="card-stacked">
+
+                        <div class="card-content">
+                            <span class="new badge green darken-4" data-badge-caption="">Article from 2018</span>
+                            <h4 class="header">The Commentary Tradition on Suhrawardī
+                            </h4>
+                            <h5></h5>
+
+                            <p>Suhrawardī (d. 1191) has been hailed as a crucial thinker in the history of philosophy in
+                                the Islamic world, as first suggested by Henry Corbin. However, the actual influ- ence
+                                of Suhrawardī on thinkers after him has mostly been assumed rather than estab- lished.
+                                In the centuries after Suhrawardī, the late-medieval and early-modern period of Islamic
+                                intellectual history, the writing of commentaries was a popular phenome- non. This did
+                                not automatically mean that the commentator was in favor of the ideas of the original
+                                author. Therefore, tracing a commentary tradition is a measurement that gives us a
+                                fairly good insight, both positive and negative, into the reception of a particular
+                                intellectual. In this article I contribute to a more precise understanding of
+                                Suhrawardī’s legacy, by putting together a list of all known commentaries, of which I
+                                have identified fifty-eight in total, with at least thirty-one of these extant.</p>
+                            <blockquote class="blockBook"><i>Philosophy East & West,</i> Honolulu: University of Hawaii
+                                Press, 68:1, 2018, pp. 539-563.
+                            </blockquote>
+                        </div>
+                        <div class="card-action">
+                            <a class="green-text text-darken-4" href="https://muse.jhu.edu/article/690299"
+                                target="_blank">Read online here</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Entry -->
+            <!-- Begin Entry -->
+            <div class="mix article islam commentaries suhrawardi arabi" date="20170601">
+                <div class="card horizontal">
+
+                    <div class="valign-wrapper hide-on-small-only">
+                        <img src="images/200.2017.JMIAS.jpg" alt="" sizes="" srcset="">
+                    </div>
+                    <div class="card-stacked">
+
+                        <div class="card-content">
+                            <span class="new badge green darken-4" data-badge-caption="">Article from 2017</span>
+                            <h4 class="header">Suhrawardī, Ibn ʿArabī, and the World of Image
+                            </h4>
+                            <h5>One term different meanings</h5>
+
+                            <p>After summarizing the idea associated with the term ‘world of image’ within the discourse
+                                of Suhrawardī and his commentators, I discuss relevant terminology and argumentation
+                                in Ibn ʿArabī’s two major texts, al-Futūḥāt al-makkiyya and Fuṣūṣ al-ḥikam. This will
+                                show that to argue for a Suhrawardian influence requires interpreting certain passages
+                                very favorably, while ignoring the philosophical context in which Ibn ʿArabī makes these
+                                remarks. I then do the same for Ibn ʿArabī’s most important early commentators,
+                                additionally pointing out that this issue was still further developed from commentator
+                                to commentator. I end with examples of how the two discourses perceived each other,
+                                namely, as largely in agreement on certain issues yet fundamentally different.</p>
+                            <blockquote class="blockBook"><i>Journal of the Muhyiddin Ibn ʿArabī Society,</i> vol. 62,
+                                2017, pp. 21-48.
+
+                            </blockquote>
+                        </div>
+                        <div class="card-action">
+                            <a class="green-text text-darken-4" href="https://zenodo.org/record/3757141"
+                                target="_blank">Download PDF here</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Entry -->
+            <!-- Begin Entry -->
+            <div class="mix article islam commentaries suhrawardi" date="20140601">
+                <div class="card horizontal">
+
+                    <div class="valign-wrapper hide-on-small-only">
+                        <img src="images/200.2014.Ishraq.jpg" alt="" sizes="" srcset="">
+                    </div>
+                    <div class="card-stacked">
+
+                        <div class="card-content">
+                            <span class="new badge green darken-4" data-badge-caption="">Article from 2014</span>
+                            <h4 class="header">Ghiyāth al-Dīn Dashtakī on the world of image (ʿālam al-mithāl)
+                            </h4>
+                            <h5>The place of his Ishrāq Hayākil al-nūr in the commentary tradition on Suhrawardī</h5>
+
+                            <p>Dawānī (d. 1502) wrote a commentary on Suhrawardī's Hayākil al-nūr. In it, the notion of
+                                the world of image is only mentioned a few times, but is never properly discussed,
+                                perhaps due to the fact that Suhrawardī himself does not mention anything of the like in
+                                his epistle. Dawāni's commentary was itself subject of another commentary, called Ishrāq
+                                Hayākil al-nūr, by Ghiyāth al-Dīn Dashtakī (d. 1542). We find embedded in this text an
+                                independent, twenty pages long epistle, dedicated to the subject of the world of image.
+                                In this paper, we shall examine this epistle in some detail. I shall start by explaining
+                                where the epistle is located in the super-commentary, and how it is embedded. Then I
+                                shall point out its source and discuss exactly how Dashtakī’s text depends on other
+                                texts. This is mainly achieved through a detailed analysis of one passage of the
+                                epistle. Afterwards, I shall discuss those parts of the text that are not to be found in
+                                the main source. Special attention will be given to those parts that seem to have flown
+                                from Dashtakī’s own pen. Finally, we will put this epistle in the context of his corpus
+                                of writings, and establish to what extent he himself seems to be committed to the idea
+                                of a world of image.</p>
+                            <blockquote class="blockBook"><i>Ishrâq: Islamic philosophy yearbook,</i> Moscow:
+                                Vostochnaya Literatura Publishers, vol. 4, 2014, pp. 116-136.
+                            </blockquote>
+                        </div>
+                        <div class="card-action">
+                            <a class="green-text text-darken-4" href="https://zenodo.org/record/3757145"
+                                target="_blank">Download PDF here</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Entry -->
+            <!-- Begin Entry -->
+            <div class="mix article islam" date="20120601">
+                <div class="card horizontal">
+
+                    <div class="valign-wrapper hide-on-small-only">
+                        <img src="images/200.2012.TarikheElm.jpg" alt="" sizes="" srcset="">
+                    </div>
+                    <div class="card-stacked">
+
+                        <div class="card-content">
+                            <span class="new badge green darken-4" data-badge-caption="">Article from 2014</span>
+                            <h4 class="header">The measurement of the circle in Naṣīr al-Dīn al-Ṭūsī’s Revision of the
+                                ‘middle books’ (Taḥrīr al- mutawassiṭāt)
+                            </h4>
+                            <h5></h5>
+
+                            <p>The mathematical treatises known as Taḥrīr al-mutawassiṭāt, “Revision of the Middle
+                                books”, are a collection of Greek and Arabic treatises which were re-edited by Naṣīr
+                                al-Dīn al-Ṭūsī. This paper explores the nature of the editorial work Ṭūsī did, showing
+                                that it is not a simple rendering of the original text but that it involves major
+                                revisions and in fact original additions. For the first time, a collated version of
+                                Ṭūsī’s revision on the treatise on the measurement of the circle (by Archimedes) is
+                                provided. A translation of the Arabic text is put side by side with a rendition of the
+                                treatise as it was circulated before Ṭūsī’s time. An in-depth analysis of the text
+                                elucidates the nature of Ṭūsī’s contributions to the text. This article also provides
+                                modest corrections to earlier studies by W. R. Knorr and P. Luckey.</p>
+                            <blockquote class="blockBook"><i>Tarikh-e Elm,</i> 10, 2012, pp.1-42.
+                            </blockquote>
+                        </div>
+                        <div class="card-action">
+                            <a class="green-text text-darken-4" href="https://zenodo.org/record/3757147"
+                                target="_blank">Download PDF here</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Entry -->
+            <!-- Begin Entry -->
+            <div class="mix article digital" date="20150201">
+                <div class="card horizontal">
+
+                    <div class="valign-wrapper hide-on-small-only">
+                        <img src="images/200.2015.MELA.jpg" alt="" sizes="" srcset="">
+                    </div>
+                    <div class="card-stacked">
+
+                        <div class="card-content">
+                            <span class="new badge green darken-4" data-badge-caption="">Article from 2015</span>
+                            <h4 class="header">The Digital Orientalist
+                            </h4>
+                            <h5>Scholarship is Becoming Bigger and Better</h5>
+
+                            <p>Over the last few years, I have been writing about how computer technology can be
+                                implemented in day-to-day scholarly activities on my weblog, www.digitalorientalist.com.
+                                That name, The Digital Orientalist, was chosen to reflect the very question I wished to
+                                explore: can computer technology of today and tomorrow be fruitfully put to use in a
+                                field like Islamic Studies which is borne out of old- fashioned philological work? Is
+                                there such a species as a “digital orientalist,” or is that a contradiction in terms?
+                                I soon realized that the question is actually of a slightly different order. It is not a
+                                question of possibility, but rather of necessity. The shift from print to digital comes
+                                with a whole slew of ramifications that either have already taken place or are in the
+                                process of coming about. Students and scholars operate in a drastically different way
+                                than ten to twenty years ago. But at the same time, there is an astonishing lack of
+                                reflection on this shift and just as little technical know-how among said students and
+                                scholars.
+                                In this essay I shall describe some of those drastically different ways in which
+                                scholarly activities are executed, especially those that have in one way or the other to
+                                do with libraries. My description is largely based on my own experience, and this piece
+                                may therefore be best read as a user case. I think libraries and librarians could (and
+                                already do) play a vital role in integrating computer technology into day-to-day
+                                academic activities, in a flourishing and sustainable way. I hope that this piece
+                                inspires a continued dialogue between librarians and patrons on such issues.</p>
+                            <blockquote class="blockBook"><i>MELA Notes,</i> Middle East Librarians Association, vol. 88, 2015, pp. 1-8.
+                            </blockquote>
+                        </div>
+                        <div class="card-action">
+                            <a class="green-text text-darken-4" href="https://www.jstor.org/stable/43741180"
+                                target="_blank">Read online here</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Entry -->
+            <div class="mix article islam" date="20080101">
+                <div class="card horizontal">
+
+                    <div class="valign-wrapper hide-on-small-only">
+                        <img src="images/2008.ZemZem.jpg" alt="" sizes="" srcset="">
+                    </div>
+                    <div class="card-stacked">
+
+                        <div class="card-content">
+                            <span class="new badge green darken-4" data-badge-caption="">Article from 2008</span>
+                            <h4 class="header">Osama bin Laden als popidool</h4>
+
+                            <p>Terwijl de massamedia een oneindige stroom aan populaire cultuur de huiskamer
+                                inslingeren,
+                                bevindt zich op korte afstand een compleet andere wereld. De wereld van martelaars en
+                                aanslagen op internet.</p>
+
+                            <blockquote class="blockArticle">ZemZem, 2008, vol. 4:2, pp. 32-38.</blockquote>
+                        </div>
+                        <div class="card-action">
+                            <a class="green-text text-darken-4" href="#">Download and read PDF here</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mix article digital" date="20200301">
+                <div class="card horizontal">
+
+                    <div class="valign-wrapper hide-on-small-only">
+                        <img src="images/2020.ILCEA.jpg" alt="" sizes="" srcset="">
+                    </div>
+                    <div class="card-stacked">
+
+                        <div class="card-content">
+                            <span class="new badge green darken-4" data-badge-caption="">Article from 2020</span>
+                            <h4 class="header">A Digital Revival of Oriental Studies</h4>
+
+                            <p>“The Digital Orientalist” is the name of an online magazine focused on using computer
+                                technology in research related to one of the domains of the Humanities that can be or
+                                has traditionally been called “Oriental.” Thus, we mean “Oriental” in the sense of how
+                                learned societies use it such as the American Oriental Society, or the Deutsche
+                                Morgenländische Gesellschaft, or in the sense of institutions such as Institut national
+                                des langues et civilisations orientales in Paris or the School of Oriental and African
+                                Studies in London. While the background history of the magazine will explain how the
+                                name has a rather innocent origin, we realize that the name is problematic. More than
+                                once, people have complained about it, considering it outdated at best, arrogant at
+                                worst. We do not mean it to be like that but rather, we see similar problems and
+                                solutions related to computer technology, among these various fields of Humanities that
+                                come together under the banner of “oriental”. In this article, we explain more fully our
+                                raison d’être.</p>
+
+                            <blockquote class="blockArticle">ILCEA: Revue de l’Institut des langues et cultures
+                                d'Europe, Amérique, Afrique, Asie et Australie, Grenoble: Université Grenoble Alpes, 39,
+                                2020, pp. 1-14. Available OA: http://journals.openedition.org/ilcea/10327</blockquote>
+                        </div>
+                        <div class="card-action">
+                            <a class="green-text text-darken-4" href="#">Download and read PDF here</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 
 
-    <!-- <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
-    <!-- Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> -->
 
+
+
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <script>
-      // Get the modal
-      var modal = document.getElementById("myModal");
+        // external js: isotope.pkgd.js
 
-      // Get the button that opens the modal
-      var btn = document.getElementById("myBtn");
 
-      // Get the <span> element that closes the modal
-      var span = document.getElementsByClassName("close")[0];
 
-      // When the user clicks the button, open the modal 
-      btn.onclick = function () {
-        modal.style.display = "block";
-      }
+        // init Isotope
+        var iso = new Isotope('.grid', {
+            itemSelector: '.mix',
+            getSortData: {
+                date: '[date]',
+                dateReverse: '[date]',
+                // number: '.number parseInt',
+                // category: '[data-category]',
+                // weight: function( itemElem ) {
+                //   var weight = itemElem.querySelector('.weight').textContent;
+                //   return parseFloat( weight.replace( /[\(\)]/g, '') );
+                // }
+            }
+        });
 
-      // When the user clicks on <span> (x), close the modal
-      span.onclick = function () {
-        modal.style.display = "none";
-      }
+        // store filter for each group
+        var filters = {};
 
-      // When the user clicks anywhere outside of the modal, close it
-      window.onclick = function (event) {
-        if (event.target == modal) {
-          modal.style.display = "none";
+        var filtersElem = document.querySelector('.filters');
+        filtersElem.addEventListener('click', function (event) {
+            // check for only button clicks
+            var isButton = event.target.classList.contains('button');
+            if (!isButton) {
+                return;
+            }
+
+            var buttonGroup = fizzyUIUtils.getParent(event.target, '.button-group');
+            var filterGroup = buttonGroup.getAttribute('data-filter-group');
+            // set filter for group
+            filters[filterGroup] = event.target.getAttribute('data-filter');
+            // combine filters
+            var filterValue = concatValues(filters);
+            // set filter for Isotope
+            iso.arrange({ filter: filterValue });
+        });
+
+        // change is-checked class on buttons
+        var buttonGroups = document.querySelectorAll('.button-group');
+
+        for (var i = 0; i < buttonGroups.length; i++) {
+            var buttonGroup = buttonGroups[i];
+            var onButtonGroupClick = getOnButtonGroupClick(buttonGroup);
+            buttonGroup.addEventListener('click', onButtonGroupClick);
         }
-      }
+
+        function getOnButtonGroupClick(buttonGroup) {
+            return function (event) {
+                // check for only button clicks
+                var isButton = event.target.classList.contains('button');
+                if (!isButton) {
+                    return;
+                }
+                var checkedButton = buttonGroup.querySelector('.is-checked');
+                checkedButton.classList.remove('is-checked')
+                event.target.classList.add('is-checked');
+            }
+        }
+
+        // flatten object by concatting values
+        function concatValues(obj) {
+            var value = '';
+            for (var prop in obj) {
+                value += obj[prop];
+            }
+            return value;
+        }
 
 
-      var woiButton = document.getElementById('woiCentered');
+        // bind sort button click
+        var sortByGroup = document.querySelector('.sort-by-button-group');
+        sortByGroup.addEventListener('click', function (event) {
 
-woiButton.onclick = function() {
-    location.href = "worldofimage.html"
-};
-      var dhButton = document.getElementById('dhCentered');
+            var sortValue = event.target.getAttribute('data-sort-value');
+            if (sortValue == 'dateReverse') {
+                console.log("its ya boy reverse");
+                iso.arrange({ sortBy: sortValue, sortAscending: false });
+            } else {
+                console.log('literally anything else');
+                iso.arrange({ sortBy: sortValue, sortAscending: true });
+            }
+        });
 
-dhButton.onclick = function() {
-    location.href = "Among/index.html"
-};
+
     </script>
-
 </body>
 
 </html>
